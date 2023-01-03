@@ -12,7 +12,7 @@ import dotenv from "dotenv";
 5. Dotenv for ability to access file .env
 */
 
-import indexRoutes from "./routes/index.routes.js";
+import indexRoutes from "./src/routes/index.routes.js";
 
 // Config dotenv
 dotenv.config();
