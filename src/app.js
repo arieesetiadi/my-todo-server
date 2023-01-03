@@ -27,6 +27,7 @@ app.use(cors());
 app.use(express.json());
 
 // Use main routes
+app.get('/', (req, res) => res.send("Express Connected 👌"));
 app.use("/api/v1", indexRoutes);
 
 // Start the app
