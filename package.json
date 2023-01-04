@@ -2,12 +2,12 @@
 	"name": "my-express-kit",
 	"version": "1.0.3",
 	"description": "A basic starter for an Express API",
-	"main": "app.js",
+	"main": "index.js",
 	"type": "module",
 	"bin": "./bin/cli.js",
 	"scripts": {
-		"start": "node app.js",
-		"dev": "nodemon app.js"
+		"start": "node index.js",
+		"dev": "nodemon index.js"
 	},
 	"keywords": [
 		"node",
