@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 /*
 1. Express
 2. Morgan for HTTP request logger
-3. Helmer for HTTP request security
+3. Helmet for HTTP request security
 4. Cors for enabling CORS
 5. Dotenv for ability to access file .env
 */
@@ -27,7 +27,9 @@ app.use(cors());
 app.use(express.json());
 
 // Use main routes
-app.get('/', (req, res) => res.send("Express Connected 👌"));
+app.get('/', (req, res) => {
+    res.send("Express Connected 👌")
+});
 app.use("/api/v1", indexRoutes);
 
 // Start the app
